@@ -139,6 +139,7 @@ function Addisue() {
     } catch (err) {
       pastdata = [];
     }
+
     let freshdata = {
       issuename: state.name,
       issuedescription: state.description,
