@@ -76,8 +76,7 @@ function Issuecrud() {
     {
       id: "demo",
       issuename: "demo issue",
-      issuedescription:
-        "This demo issue is created by venkatesh.Please add issue using add issue button.This data is deleted automatically,when you delete any data.Further added issues will have edit and delete button.",
+      issuedescription: "This demo issue is created by venkatesh",
     },
   ]);
   const [alert, setAlert] = useState({
@@ -98,7 +97,7 @@ function Issuecrud() {
   const handledelete = (value) => {
     debugger;
     let data = state;
-    let result = data.filter((v) => v.id !== value?.id && v.id !== "demo");
+    let result = data.filter((v) => v.id !== value?.id && v.id);
 
     setState(result);
     localStorage.setItem("Totalissue", JSON.stringify(result));
@@ -200,7 +199,6 @@ function Issuecrud() {
                             textIndent: "10px",
                             whiteSpace: "normal !important",
                           }}
-                          variant="body2"
                         >
                           {v?.issuedescription}
                         </Typography>
