@@ -1,6 +1,6 @@
 {
   "name": "issueapp",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
